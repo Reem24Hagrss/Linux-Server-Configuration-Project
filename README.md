@@ -8,8 +8,10 @@
 
 ## Server details
    > * IP address: xx.xx.xx
-     * SSH port: xxxx
-     * URL:
+    
+    * SSH port: xxxx
+    
+    * URL:
 
 ### Having a Server
 > * Start a new Ubuntu Linux server instance on [Amazon Lightsail](https://lightsail.aws.amazon.com/).
