@@ -7,9 +7,9 @@
 > * A deep understanding of exactly what your web applications are doing, how they are hosted, and the interactions between multiple systems are what define you as a Full Stack Web Developer. In this project, you’ll be responsible for turning a brand-new, bare bones, Linux server into the secure and efficient web application host your applications need.
 
 ## Server details
-   > * IP address: 172.26.10.164    
+   > * IP address: 172.26.10.185    
    > * SSH port: 2200                                 
-   > * URL:http://172.26.10.164/
+   > * URL:http://172.26.10.185/
 
 ##  Getting a Server
 
@@ -25,7 +25,7 @@
 > * sudo chmod +x ~/.ssh/DefaultKey
 
 * Connect to instance.
-> * ssh -i ~/.ssh/DefaultKey ubuntu@172.26.10.164
+> * ssh -i ~/.ssh/DefaultKey ubuntu@172.26.10.185
 
 
 ## Secure your server.
@@ -87,7 +87,7 @@
 > sudo chmod 644 .ssh/authorized_keys 
 
 * Connect to grader
-> ssh -i ~/.ssh/grader_key grader@172.26.10.164 -p 2200
+> ssh -i ~/.ssh/grader_key grader@172.26.10.185 -p 2200
 
 ## Prepare to deploy your project.
 
@@ -203,7 +203,7 @@
 * Add the following to `000-default.conf` file
 
       <VirtualHost *:80>
-                  ServerName 172.26.10.164
+                  ServerName 172.26.10.185
                   WSGIScriptAlias / /var/www/catalog/catalog.wsgi
                   <Directory /var/www/catalog/>
                         Order allow,deny
