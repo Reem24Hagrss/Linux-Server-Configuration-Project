@@ -203,8 +203,7 @@
 * Add the following to `000-default.conf` file
 
       <VirtualHost *:80>
-                  ServerName 54.212.247.55
-                  ServerAdmin abdelaleem@gmx.com
+                  ServerName 172.26.10.164
                   WSGIScriptAlias / /var/www/catalog/catalog.wsgi
                   <Directory /var/www/catalog/>
                         Order allow,deny
