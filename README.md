@@ -11,8 +11,20 @@
    > * SSH port: 2200                                 
    > * URL:
 
-### Having a Server
+### 1- Having a Server
 > * Start a new Ubuntu Linux server instance on [Amazon Lightsail](https://lightsail.aws.amazon.com/).
+
+### 2- Connect to your Server using SSH
+
+* Create a directory.        
+> * mkdir -p ~/.ssh
+
+* Move the downloaded `.pem` file to `.ssh` directory we just created.    
+> * mv key.pem ~/.ssh
+> * sudo chmod 400 ~/.ssh/key.pem
+
+* Connect to instance.
+> * ssh -i ~/.ssh/key.pem ubuntu@18.195.83.125
 
 
 ### 3- Update all currently installed packages
