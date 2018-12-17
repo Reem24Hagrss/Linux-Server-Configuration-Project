@@ -7,9 +7,11 @@
 > * A deep understanding of exactly what your web applications are doing, how they are hosted, and the interactions between multiple systems are what define you as a Full Stack Web Developer. In this project, you’ll be responsible for turning a brand-new, bare bones, Linux server into the secure and efficient web application host your applications need.
 
 ## Server details
-   > * IP address: 172.26.10.185    
+
+   > * IP address: 172.26.0.185   
+   > * Public IP address:18.185.103.50
    > * SSH port: 2200                                 
-   > * URL:http://172.26.10.185/
+   > * URL:http://172.26.0.185/
 
 ##  Getting a Server
 
@@ -25,7 +27,7 @@
 > * sudo chmod +x ~/.ssh/DefaultKey
 
 * Connect to instance.
-> * ssh -i ~/.ssh/DefaultKey ubuntu@172.26.10.185
+> * ssh -i ~/.ssh/DefaultKey ubuntu@172.26.0.185
 
 
 ## Secure your server.
