@@ -7,8 +7,8 @@
 > * A deep understanding of exactly what your web applications are doing, how they are hosted, and the interactions between multiple systems are what define you as a Full Stack Web Developer. In this project, you’ll be responsible for turning a brand-new, bare bones, Linux server into the secure and efficient web application host your applications need.
 
 ## Server details
-   > * IP address: xx.xx.xx       
-   > * SSH port: xxxx                                  
+   > * Public IP address: 18.195.83.125      
+   > * SSH port: 2200                                 
    > * URL:
 
 ### Having a Server
