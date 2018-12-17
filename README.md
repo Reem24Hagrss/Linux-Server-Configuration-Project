@@ -8,10 +8,10 @@
 
 ## Server details
 
-   > * IP address: 172.26.0.185   
-   > * Public IP address:18.185.103.50
+   > * Private IP:172.26.4.238
+   > * Public IP:18.195.6.35
    > * SSH port: 2200                                 
-   > * URL:http://172.26.0.185/
+   > * URL:http://172.26.4.238/
 
 ##  Getting a Server
 
@@ -27,7 +27,7 @@
 > * sudo chmod +x ~/.ssh/DefaultKey
 
 * Connect to instance.
-> * ssh -i ~/.ssh/DefaultKey ubuntu@172.26.0.185
+> * ssh -i ~/.ssh/DefaultKey ubuntu@172.26.4.238
 
 
 ## Secure your server.
@@ -89,7 +89,7 @@
 > sudo chmod 644 .ssh/authorized_keys 
 
 * Connect to grader
-> ssh -i ~/.ssh/grader_key grader@172.26.10.185 -p 2200
+> ssh -i ~/.ssh/grader_key grader@172.26.4.238 -p 2200
 
 ## Prepare to deploy your project.
 
@@ -205,7 +205,7 @@
 * Add the following to `000-default.conf` file
 
       <VirtualHost *:80>
-                  ServerName 172.26.10.185
+                  ServerName 172.26.4.238
                   WSGIScriptAlias / /var/www/catalog/catalog.wsgi
                   <Directory /var/www/catalog/>
                         Order allow,deny
