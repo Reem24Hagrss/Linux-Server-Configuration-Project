@@ -24,10 +24,10 @@
 
 * Move the downloaded `.pem` file to `.ssh` directory we just created.    
 > * mv DefaultKey.pem ~/.ssh
-> * sudo chmod +x ~/.ssh/DefaultKey
+> * sudo chmod +x ~/.ssh/DefaultKey.pem
 
 * Connect to instance.
-> * ssh -i ~/.ssh/DefaultKey ubuntu@172.26.4.238
+> * ssh -i ~/.ssh/DefaultKey.pem ubuntu@172.26.4.238
 
 
 ## Secure your server.
