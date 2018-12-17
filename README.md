@@ -13,3 +13,9 @@
 
 ### Having a Server
 > * Start a new Ubuntu Linux server instance on [Amazon Lightsail](https://lightsail.aws.amazon.com/).
+
+
+### Update all currently installed packages
+
+     >   sudo apt-get update
+     >   sudo apt-get upgrade
