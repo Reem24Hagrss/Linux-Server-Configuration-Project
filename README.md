@@ -119,13 +119,13 @@
 > psql
     
 * Create database user named `catalog`.
-> CREATE ROLE catalog WITH LOGIN;
+> CREATE ROLE CatalogItemProject WITH LOGIN;
     
 * Limit permissions of user.
-> ALTER ROLE catalog CREATEDB;
+> ALTER ROLE CatalogItemProject CREATEDB;
 
 * Set user `catalog` password
-> \password catalog
+> \password CatalogItemProject
           
 * Exit `psql` by pressing `Ctrl+D`
 * Switch back to `ubuntu` user by running `exit`
@@ -174,7 +174,7 @@
 > sudo -H pip3 install virtualenv
 
 * Change current directory to `catalog` directory
-> cd catalog/
+> cd CatalogItemProject/
 
 * Create virtual enviroment called `env`
 > virtualenv env
@@ -205,14 +205,14 @@
 
       <VirtualHost *:80>
                   ServerName 172.26.1.244
-                  WSGIScriptAlias / /var/www/catalog/catalog.wsgi
-                  <Directory /var/www/catalog/>
+                  WSGIScriptAlias / /var/www/CatalogItemProject/CatalogItemProject.wsgi
+                  <Directory /var/www/CatalogItemProject/>
                         Order allow,deny
                         Allow from all
                         Options -Indexes
                   </Directory>
-                  Alias /static /var/www/catalog/static
-                  <Directory /var/www/catalog/static/>
+                  Alias /static /var/www/CatalogItemProject/static
+                  <Directory /var/www/CatalogItemProject/static/>
                         Order allow,deny
                         Allow from all
                         Options -Indexes
