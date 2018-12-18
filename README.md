@@ -11,7 +11,7 @@
    > * Private IP:172.26.1.244
    > * Public IP:18.195.96.195
    > * SSH port: 2200                                 
-   > * URL:http://172.26.1.244/
+   > * URL:http://18.195.96.195/
 
 ##  Getting a Server
 
