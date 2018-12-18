@@ -145,13 +145,13 @@
 > sudo git clone https://github.com/SalmaElaskary/CatalogItemProject.git
 
 * Change ownership of `catalog` directory to ubuntu user
-> sudo chown -R ubuntu:ubuntu catalog/
+> sudo chown -R ubuntu:ubuntu CatalogItemProject/
 
 * Change current directory to project directory
-> cd catalog
+> cd CatalogItemProject
 
 * Create `catalog.wsgi` file using `GNU Nano`
-> sudo nano catalog.wsgi
+> sudo nano CatalogItemProject.wsgi
 
 * Add the following into the file created
 
@@ -159,7 +159,7 @@
       import sys
       sys.stdout = sys.stderr
 
-      activate_this = '/var/www/catalog/env/bin/activate_this.py'
+      activate_this = '/var/www/CatalogItemProject/env/bin/activate_this.py'
       with open(activate_this) as file_:
       exec(file_.read(), dict(__file__=activate_this))
 
