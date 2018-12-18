@@ -27,7 +27,7 @@
 > * chmod +x ~/.ssh/DefaultKey.pem
 
 * Connect to instance.
-> * ssh -i ~/.ssh/DefaultKey.pem ubuntu@172.26.8.147
+> * ssh -i ~/.ssh/DefaultKey.pem -p 2200 ubuntu@172.26.8.147
 
 
 ## Secure your server.
