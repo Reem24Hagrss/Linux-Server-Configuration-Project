@@ -69,8 +69,10 @@
 ### 7.Give grader the permission to sudo
 * Super user configuration
 > sudo nano /etc/sudoers.d/grader
+
 > *OR run the following*
 > sudo visudo
+
 * Add the following.
 > grader ALL=(ALL) NOPASSWD:ALL 
 
@@ -78,15 +80,18 @@
 > ssh-keygen -t rsa
 
 * Move generated key
-> sudo su - grader
-> mkdir .ssh
-> touch .ssh/authorized_keys
->  mv grader_key ~/.ssh/
+> * sudo su - grader
+
+> * mkdir .ssh
+
+> * touch .ssh/authorized_keys
+
+> * mv grader_key ~/.ssh/
 
 * Move content of `grader_key.pub` to that of `authorized_keys`
-> mv grader_key.pub  ~/.ssh/authorized_keys
-> sudo chmod 700 .ssh
-> sudo chmod 644 .ssh/authorized_keys 
+> * mv grader_key.pub  ~/.ssh/authorized_keys
+> * sudo chmod 700 .ssh
+> * sudo chmod 644 .ssh/authorized_keys 
 
 * Connect to grader
 > ssh -i ~/.ssh/grader_key grader@172.26.4.238 -p 2200
@@ -184,12 +189,12 @@
 > source env/bin/activate
 
 * Install dependencies
-> pip3 install httplib2
-> pip3 install requests
-> pip3 install --upgrade oauth2client
-> pip3 install sqlalchemy
-> pip3 install flask
-> pip3 install psycopg2
+> * pip3 install httplib2
+> * pip3 install requests
+> * pip3 install --upgrade oauth2client
+> * pip3 install sqlalchemy
+> * pip3 install flask
+> * pip3 install psycopg2
       
    ### 14. Set it up in your server so that it functions correctly when visiting your server’s IP address in a browser. Make sure that your .git directory is not publicly accessible via a browser!
 
