@@ -70,9 +70,6 @@
 * Super user configuration
 > sudo nano /etc/sudoers.d/grader
 
-> *OR run the following*
-> sudo visudo
-
 * Add the following.
 > grader ALL=(ALL) NOPASSWD:ALL 
 
