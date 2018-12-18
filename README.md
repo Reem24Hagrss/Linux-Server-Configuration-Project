@@ -58,9 +58,6 @@
 * Allow incoming connections for NTP (port 123)
 > sudo ufw allow 123/tcp
 
-* Enable UFW
-> sudo ufw enable
-
 ## Give grader access.
 
 ### 6. Create a new user account named grader.
